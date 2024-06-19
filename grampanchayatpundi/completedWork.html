@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Works</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link the CSS file -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #337ab7;
+            color: #ffffff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .work {
+            background-color: #ffffff;
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid #337ab7;
+        }
+
+            .work h3 {
+                font-size: 20px;
+                color: #337ab7;
+            }
+
+            .work p {
+                font-size: 16px;
+            }
+
+            .work img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+    </style>
+</head>
+<body style="background: url('MainContent_Image1.jpg') no-repeat center center fixed; background-size: cover;">
+    <h1>ग्रामपंचायत पुंडी पुर्ण झालेली विकास कामे</h1>
+    <!-- Start of Page Menu -->
+
+    <div id="page_menu">
+        <ul id="ulmenu1">
+            <li><a href="index.html">मुखपृष्ठ</a></li>
+            <!--<li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="WriteMessage.html">Write Message</a></li>-->
+            <li class="last"><a href="WebsiteFeedback.html">Website Feedback</a></li>
+        </ul>
+
+    </div>
+
+    <!-- End of Page Menu -->>
+
+    <div class="work">
+        <h3>श्री राम मंदिर पुंडी</h3>
+        <p>
+            “जसा प्रत्येकाच्या जीवनात एक सखा
+            कृष्ण आवश्यक आहे,
+            तसाच प्रत्येकाच्या मनात,
+            मर्यादा पुरुषोत्तम
+            राम असणं आवश्यक आहे.”.
+        </p>
+        <div class="image-slider" id="slider1">
+            <img src="./CompletedWork/Rammandir.jpg" alt="श्री राम मंदिर पुंडी">
+            <!--<img src="./CompletedWork/Rammandir2.jpg" alt="श्री राम मंदिर पुंडी">
+            <img src="./CompletedWork/Rammandir3.jpg" alt="श्री राम मंदिर पुंडी">-->
+        </div>
+    </div>
+    <div class="work">
+        <h3>पेयजल आपणार प्रकल्प</h3>
+        <p>
+            सर्व निवासियोंसाठी शुद्ध आणि पहोचनीय पेयजल सुनिश्चित करण्याच्या उद्देशाने ग्रामपंचायतने पेयजल आपणार प्रकल्प अंमलात आहे. ह्या प्रकल्पाच्या भागात पाण्याच्या पायपायाच्या व निसर्गच्या स्वच्छीकरण व्यवस्था अंमलात आहे.
+        </p>
+        <div class="image-slider" id="slider3">
+            <img src="./CompletedWork/water1.jpg" alt="पेयजल आपणार प्रकल्प">
+            <img src="./CompletedWork/water2.jpg" alt="पेयजल आपणार प्रकल्प">
+            <img src="./CompletedWork/water3.jpg" alt="पेयजल आपणार प्रकल्प">
+        </div>
+    </div>
+
+    <div class="work">
+        <h3>नवीन सभामंडप बांधणे</h3>
+        <p>
+            सर्व ग्रामस्थ व सरपंच व उपसरपंच यांच्या सहकार्याने यशस्वीरीत्या पूर्ण केले, नवीन सभामंडप बांधणे.
+        </p>
+        <div class="image-slider" id="slider2">
+            <img src="./CompletedWork/sabhamandap.jpg" alt="सभामंडप बांधणे">
+        </div>
+    </div>
+
+
+
+    <div class="work">
+        <h3>सडकीच्या ढंवळीसुधारणा</h3>
+        <p>
+            ग्रामपंचायतने सुचलितपणे या सडकीच्या ढंवळीसुधारण्यावर काम केल्यात. ह्या प्रकल्पाच्या भागात सडकीच्या अधिकतर वापरकरीता, मरम्मत आणि नव्या सडकीच्या निर्माणाच्या कामाची आहे, ज्यामुळे सर्व ग्रामवासिनांसाठी परिवहन सोपे होते.
+        </p>
+        <div class="image-slider" id="slider4">
+            <img src="./CompletedWork/road-improvement.jpg" alt="सडकीच्या ढंवळीसुधारणा">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Grampanchayat Pundi. All rights reserved.</p>
+        <p>
+            Website Designed, Developed, Hosted & maintained by Atesh bhalerao. Content provided by Grampanchayat Office Pundi.
+            Copyright © 2023 Atesh Bhalerao.
+        </p>
+    </footer>
+
+    <script>
+        const sliders = document.querySelectorAll('.image-slider');
+        sliders.forEach((slider, index) => {
+            let currentImage = 0;
+            const images = slider.querySelectorAll('img');
+
+            function changeImage() {
+                images[currentImage].style.display = 'none';
+                currentImage = (currentImage + 1) % images.length;
+                images[currentImage].style.display = 'block';
+                setTimeout(changeImage, 3000); // Change image every 3 seconds
+            }
+
+            changeImage();
+        });
+    </script>
+</body>
+</html>
