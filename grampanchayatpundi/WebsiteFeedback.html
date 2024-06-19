@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link the CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            input[type="submit"] {
+                background-color: #3498db;
+                color: #fff;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+            }
+
+                input[type="submit"]:hover {
+                    background-color: #258cd1;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="BodyImages/header-image.jpg" alt="Header Image" id="header-image">
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Grampanchayat Log-in</a></li>
+                <li><a href="#">Write Message</a></li>
+                <li><a href="WebsiteFeedback.html">Website Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="mailto:balu2312bhalerao@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Grampanchayat Pundi. All rights reserved.</p>
+        <p>Website Designed, Developed, Hosted & maintained by Atesh Bhalerao. Content provided by Grampanchayat Office Pundi. Copyright © 2023 Atesh Bhalerao.</p>
+    </footer>
+</body>
+</html>
