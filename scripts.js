@@ -24,6 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = url;
         });
     });
+    //image table
+    const scrollAmount = 150; // Adjust this value based on how much you want to scroll
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const imageTable = document.querySelector('.image-table');
+
+    document.querySelector('.scroll-button.left').addEventListener('click', function () {
+        imageWrapper.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('.scroll-button.right').addEventListener('click', function () {
+        imageWrapper.scrollBy({
+            left:
 
 
 
